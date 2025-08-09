@@ -1,7 +1,7 @@
 // routes/productRoutes.js
 
 const express = require('express');
-const { getAll, create, update, deleteProduct } = require('../controllers/productController');
+const { getAll, create, update, delete: deleteProduct } = require('../controllers/productController');
 const auth = require('../middleware/authMiddleware');
 
 const router = express.Router();

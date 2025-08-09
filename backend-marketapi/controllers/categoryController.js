@@ -9,5 +9,5 @@ exports.getAll = async(req,res) => {
 exports.create = async (req,res) => {
     const category = new Category(req.body);
     await category.save();
-    req.status(201).json(category);
+    res.status(201).json(category);
 };
